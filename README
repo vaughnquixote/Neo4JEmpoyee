@@ -24,4 +24,6 @@ curl localhost:8080/getemployees
   the terminal as a list of jsons with the appropriate attributes
 
 curl -X DELETE localhost:8080/deleteemployees
-  This will delete all of the nodes in the database. 
+  This will delete all of the nodes in the database.
+
+Thank you for the opportunity and all the best!
