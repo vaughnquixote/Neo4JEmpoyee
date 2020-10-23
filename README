@@ -1,0 +1,27 @@
+Vaughn Franz
+10/23/2020
+
+I chose to build the api using Java and Spring Boot.  The relevant code can be found in the
+~/Neo4JEmployee/src/main/java directory. The application requires a Neo4J database server to be
+running at "localhost:7687" It will make the nodes in the default database.
+
+To run the application you can use the following steps:
+
+Navigate to the directory via the command line. Once there you can start the spring boot application
+by running the jar file in the target directory by writing;
+
+java -jar target/Neo4JEmployee-0.0.1-SNAPSHOT.jar
+
+Then in a new command line window the following commands will allow you to create employees and
+get all employees:
+
+curl -X POST localhost:8080/create/$name/$id
+  This will create an employee with the name and id that you provide in the url.
+  id should correspond to an integer value
+
+curl localhost:8080/getemployees
+  This will return all the employees in the database as a list, should print to
+  the terminal as a list of jsons with the appropriate attributes
+
+curl -X DELETE localhost:8080/deleteemployees
+  This will delete all of the nodes in the database. 
