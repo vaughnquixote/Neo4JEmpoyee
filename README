@@ -12,6 +12,13 @@ by running the jar file in the target directory by writing;
 
 java -jar target/Neo4JEmployee-0.0.1-SNAPSHOT.jar
 
+
+Once the application is running you need to provide the username and password for the database server
+by using:
+
+curl -X POST localhost:8080/database/$user/$password 
+  $user being your username and $password your password
+
 Then in a new command line window the following commands will allow you to create employees and
 get all employees:
 
